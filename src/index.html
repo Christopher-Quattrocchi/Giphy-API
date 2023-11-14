@@ -1,0 +1,49 @@
+<html lang="en-US">
+<head>
+  <title>GIPHY</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Find GIFs</h1>
+    <p>Find gifs:</p>
+    <pre>
+     Filler
+    </pre>
+    <form>
+      <label for="endpoint">Endpoint (search, trending):</label>
+   
+      <select name="endpoint" id="endpoint">
+        <option value="search">Search</option>
+        <option value="trending">Trending</option>
+        <option value="random">Random</option>
+      </select>
+      <br />
+
+      <label for="query">Query:</label>
+      <input id="query" type="text" name="query">
+      <br />
+
+      <label for="limit">How many results?</label>
+      <select name="limit" id="limit">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+      </select>
+
+      <label for="rating">Rating</label>
+      <select name="rating" id="rating">
+        <option value="g">G</option>
+        <option value="pg">PG</option>
+        <option value="pg-13">PG-13</option>
+        <option value="r">R</option>
+      </select>
+    
+      <button type="submit" class="btn-success" id="weatherLocation">Find stuff</button>
+    </form>
+    <!-- <button type="submit" class="btn-success" id="random">Random</button> -->
+    <div id="showResponse"></div>
+  </div>
+</body>
+</html>
